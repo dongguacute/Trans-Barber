@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: はじめる
-      link: /ja/test
+      link: /ja/1Introduction
     - theme: alt
-      text: ドキュメントを見る
-      link: /ja/test2
+      text: 言えない言葉
+      link: /ja/3cantspeak
 
 features:
   - icon: 🏳️‍⚧️

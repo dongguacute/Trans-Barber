@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /en/test
+      link: /en/1Introduction
     - theme: alt
-      text: View Documentation
-      link: /en/test2
+      text: Can't say
+      link: /en/3cantspeak
 
 features:
   - icon: 🏳️‍⚧️

@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /test
+      link: /1Introduction
     - theme: alt
-      text: 查看文档
-      link: /test2
+      text: 不能说的话
+      link: /3cantspeak
 
 features:
   - icon: 🏳️‍⚧️

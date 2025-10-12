@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: 開始閱讀
-      link: /zh-tw/test
+      link: /zh-tw/1Introduction
     - theme: alt
-      text: 查看文檔
-      link: /zh-tw/test2
+      text: 不能說的話
+      link: /zh-tw/3cantspeak
 
 features:
   - icon: 🏳️‍⚧️

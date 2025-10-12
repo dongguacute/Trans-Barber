@@ -21,10 +21,10 @@ export default defineConfig({
         ],
         sidebar: [
           {
-            text: '文档',
             items: [
-              { text: '测试文档 1', link: '/test' },
-              { text: '测试文档 2', link: '/test2' }
+              { text: '引子', link: '/1Introduction' },
+              { text: '什么是跨性别', link: '/2whatstrans' },
+              { text: '不能说的话', link: '/3cantspeak' }
             ]
           }
         ],
