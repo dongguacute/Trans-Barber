@@ -41,8 +41,13 @@ export default defineConfig({
      ['link', { rel: 'stylesheet', href: '/style.css' }]
    ],
    title: "Trans Barber",
+   appearance:true,
+    lastUpdated: true,
    description: "A website that helps hairdressers understand the needs of transgender people",
   themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/dongguacute/Trans-Barber/edit/main/:path'
+    },
     search: {
       provider: 'local'
     },

@@ -45,6 +45,9 @@ importers:
       '@nolebase/vitepress-plugin-sidebar':
         specifier: ^2.18.2
         version: 2.18.2(vitepress@2.0.0-alpha.12(jiti@2.6.1)(less@4.4.2)(lightningcss@1.30.1)(postcss@8.5.6))
+      '@types/dom-view-transitions':
+        specifier: ^1.0.6
+        version: 1.0.6
       autoprefixer:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.6)
@@ -60,6 +63,9 @@ importers:
       vitepress:
         specifier: 2.0.0-alpha.12
         version: 2.0.0-alpha.12(jiti@2.6.1)(less@4.4.2)(lightningcss@1.30.1)(postcss@8.5.6)
+      vue:
+        specifier: ^3.4.0
+        version: 3.5.22
 
 packages:
 
@@ -589,6 +595,9 @@ packages:
 
   '@tailwindcss/postcss@4.1.14':
     resolution: {integrity: sha512-BdMjIxy7HUNThK87C7BC8I1rE8BVUsfNQSI5siQ4JK3iIa3w0XyVvVL9SXLWO//CtYTcp1v7zci0fYwJOjB+Zg==}
+
+  '@types/dom-view-transitions@1.0.6':
+    resolution: {integrity: sha512-Q5IoDouTOcZKEs4nDpmUti2MXP48MQDBkS2nUQKFrsDeTFIaArVmhWUon28vlDfNkbbaK4EROu4Fv0iKObWjSg==}
 
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
@@ -1893,6 +1902,8 @@ snapshots:
       '@tailwindcss/oxide': 4.1.14
       postcss: 8.5.6
       tailwindcss: 4.1.14
+
+  '@types/dom-view-transitions@1.0.6': {}
 
   '@types/estree@1.0.8': {}
 

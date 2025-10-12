@@ -17,11 +17,13 @@
     "@nolebase/vitepress-plugin-inline-link-preview": "^2.18.2",
     "@nolebase/vitepress-plugin-page-properties": "^2.18.2",
     "@nolebase/vitepress-plugin-sidebar": "^2.18.2",
+    "@types/dom-view-transitions": "^1.0.6",
     "autoprefixer": "^10.4.21",
     "medium-zoom": "^1.1.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.14",
-    "vitepress": "2.0.0-alpha.12"
+    "vitepress": "2.0.0-alpha.12",
+    "vue": "^3.4.0"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.14"

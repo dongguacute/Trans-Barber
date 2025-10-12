@@ -23,6 +23,7 @@
     "skipLibCheck": true
   },
   "include": [
+    "env.d.ts",
     "**/.vitepress/**/*.ts",
     "**/.vitepress/**/*.mts",
     "**/.vitepress/**/*.vue"

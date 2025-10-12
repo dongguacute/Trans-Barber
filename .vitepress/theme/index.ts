@@ -8,33 +8,29 @@ import {
 import {
   NolebaseInlineLinkPreviewPlugin
 } from '@nolebase/vitepress-plugin-inline-link-preview/client'
-import {  
-  NolebaseHighlightTargetedHeading,  
+import {
+  NolebaseHighlightTargetedHeading,
 } from '@nolebase/vitepress-plugin-highlight-targeted-heading/client'
 // Import plugin styles after Tailwind to ensure higher specificity
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
 import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css' //*
-import { 
-  NolebaseEnhancedReadabilitiesMenu, 
-  NolebaseEnhancedReadabilitiesScreenMenu, 
+import {
+  NolebaseEnhancedReadabilitiesMenu,
+  NolebaseEnhancedReadabilitiesScreenMenu,
 } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
 
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
-
+import MyLayout from './MyLayout.vue'
 export const Theme: ThemeConfig = {
   extends: DefaultTheme,
-  Layout: () => {
-    return h(DefaultTheme.Layout, null, {
-      'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu), 
-      'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu), 
-  
-      // other configurations...
-      'layout-top': () => [ 
-        h(NolebaseHighlightTargetedHeading), 
-      ], 
-    })
-  },
+  Layout: () => h(MyLayout, null, {
+    'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
+    'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
+    'layout-top': () => [
+      h(NolebaseHighlightTargetedHeading),
+    ],
+  }),
   enhanceApp({ app }) {
     app.use(NolebaseGitChangelogPlugin)
     app.use(NolebaseInlineLinkPreviewPlugin)
