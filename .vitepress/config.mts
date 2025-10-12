@@ -7,6 +7,7 @@ import {
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
    vite: {
+
      plugins: [
        GitChangelog({
          // Fill in your repository URL here
@@ -40,5 +41,5 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
-  }
+  },
 })
