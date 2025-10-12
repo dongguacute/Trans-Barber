@@ -6,6 +6,8 @@ outline: deep
 
 This page demonstrates usage of some of the runtime APIs provided by VitePress.
 
+您可以回到 [Markdown Examples](./markdown-examples.md) 頁面查看 Markdown 擴展功能。
+
 The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
 
 ```md
@@ -47,3 +49,5 @@ const { site, theme, page, frontmatter } = useData()
 ## More
 
 Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+
+回到 [首頁](./index.md) 或查看 [Markdown Examples](./markdown-examples.md)。

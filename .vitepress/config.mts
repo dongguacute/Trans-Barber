@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitepress'
-import { 
-  GitChangelog, 
-  GitChangelogMarkdownSection, 
+import {
+  GitChangelog,
+  GitChangelogMarkdownSection,
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
+import { InlineLinkPreviewElementTransform } from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -15,6 +16,11 @@ export default defineConfig({
        }),
        GitChangelogMarkdownSection(),
      ],
+   },
+   markdown: {
+     config: (md) => {
+       md.use(InlineLinkPreviewElementTransform)
+     },
    },
    head: [
      ['link', { rel: 'stylesheet', href: '/style.css' }]
