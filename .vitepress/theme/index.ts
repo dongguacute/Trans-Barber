@@ -19,7 +19,7 @@ import {
   NolebaseEnhancedReadabilitiesMenu,
   NolebaseEnhancedReadabilitiesScreenMenu,
 } from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
-
+import { InjectionKey } from '@nolebase/vitepress-plugin-inline-link-preview/client'
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import MyLayout from './MyLayout.vue'
 export const Theme: ThemeConfig = {
@@ -32,6 +32,34 @@ export const Theme: ThemeConfig = {
     ],
   }),
   enhanceApp({ app }) {
+    app.provide(InjectionKey, {
+      locales: { // i18n
+        'zh-CN': { // configure for Simplified Chinese
+          popup: {
+            loading: '加载中...',
+            loadingAriaLabel: '加载中',
+          }
+        },
+        'zh-TW': { // configure for Traditional Chinese
+          popup: {
+            loading: '載入中...',
+            loadingAriaLabel: '載入中',
+          }
+        },
+        'en': { // configure for English
+          popup: {
+            loading: 'Loading...',
+            loadingAriaLabel: 'Loading',
+          }
+        },
+        'ja': { // configure for Japanese
+          popup: {
+            loading: '読み込み中...',
+            loadingAriaLabel: '読み込み中',
+          }
+        }
+      }
+    })
     app.use(NolebaseGitChangelogPlugin)
     app.use(NolebaseInlineLinkPreviewPlugin)
   },

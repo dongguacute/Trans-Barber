@@ -54,7 +54,33 @@ export default defineConfig({
         sidebarMenuLabel: '菜单',
         darkModeSwitchLabel: '主题',
         lightModeSwitchTitle: '切换到浅色模式',
-        darkModeSwitchTitle: '切换到深色模式'
+        darkModeSwitchTitle: '切换到深色模式',
+        search: {
+          provider: 'local',
+          options: {
+            translations: {
+              button: {
+                buttonText: '搜索',
+                buttonAriaLabel: '搜索'
+              },
+              modal: {
+                displayDetails: '显示详细列表',
+                resetButtonTitle: '清除查询条件',
+                backButtonTitle: '返回上一级',
+                noResultsText: '无法找到相关结果',
+                footer: {
+                  selectText: '选择',
+                  selectKeyAriaLabel: '回车',
+                  navigateText: '切换',
+                  navigateUpKeyAriaLabel: '上箭头',
+                  navigateDownKeyAriaLabel: '下箭头',
+                  closeText: '关闭',
+                  closeKeyAriaLabel: 'escape'
+                }
+              }
+            }
+          }
+        }
       }
     },
     en: {
@@ -97,7 +123,33 @@ export default defineConfig({
         sidebarMenuLabel: 'Menu',
         darkModeSwitchLabel: 'Appearance',
         lightModeSwitchTitle: 'Switch to light theme',
-        darkModeSwitchTitle: 'Switch to dark theme'
+        darkModeSwitchTitle: 'Switch to dark theme',
+        search: {
+          provider: 'local',
+          options: {
+            translations: {
+              button: {
+                buttonText: 'Search',
+                buttonAriaLabel: 'Search'
+              },
+              modal: {
+                displayDetails: 'Display detailed list',
+                resetButtonTitle: 'Clear query conditions',
+                backButtonTitle: 'Go back to previous level',
+                noResultsText: 'Unable to find relevant results',
+                footer: {
+                  selectText: 'Select',
+                  selectKeyAriaLabel: 'Enter',
+                  navigateText: 'Switch',
+                  navigateUpKeyAriaLabel: 'Up arrow',
+                  navigateDownKeyAriaLabel: 'Down arrow',
+                  closeText: 'Close',
+                  closeKeyAriaLabel: 'escape'
+                }
+              }
+            }
+          }
+        }
       }
     },
     'zh-tw': {
@@ -140,7 +192,33 @@ export default defineConfig({
         sidebarMenuLabel: '選單',
         darkModeSwitchLabel: '主題',
         lightModeSwitchTitle: '切換到淺色模式',
-        darkModeSwitchTitle: '切換到深色模式'
+        darkModeSwitchTitle: '切換到深色模式',
+        search: {
+          provider: 'local',
+          options: {
+            translations: {
+              button: {
+                buttonText: '搜尋',
+                buttonAriaLabel: '搜尋'
+              },
+              modal: {
+                displayDetails: '顯示詳細列表',
+                resetButtonTitle: '清除查詢條件',
+                backButtonTitle: '返回上一級',
+                noResultsText: '無法找到相關結果',
+                footer: {
+                  selectText: '選擇',
+                  selectKeyAriaLabel: 'Enter',
+                  navigateText: '切換',
+                  navigateUpKeyAriaLabel: '上箭頭',
+                  navigateDownKeyAriaLabel: '下箭頭',
+                  closeText: '關閉',
+                  closeKeyAriaLabel: 'escape'
+                }
+              }
+            }
+          }
+        }
       }
     },
     ja: {
@@ -183,7 +261,33 @@ export default defineConfig({
         sidebarMenuLabel: 'メニュー',
         darkModeSwitchLabel: 'テーマ',
         lightModeSwitchTitle: 'ライトテーマに切り替える',
-        darkModeSwitchTitle: 'ダークテーマに切り替える'
+        darkModeSwitchTitle: 'ダークテーマに切り替える',
+        search: {
+          provider: 'local',
+          options: {
+            translations: {
+              button: {
+                buttonText: '検索',
+                buttonAriaLabel: '検索'
+              },
+              modal: {
+                displayDetails: '詳細リストを表示',
+                resetButtonTitle: 'クエリ条件をクリア',
+                backButtonTitle: '前のレベルに戻る',
+                noResultsText: '関連する結果が見つかりません',
+                footer: {
+                  selectText: '選択',
+                  selectKeyAriaLabel: 'Enter',
+                  navigateText: '切り替え',
+                  navigateUpKeyAriaLabel: '上矢印',
+                  navigateDownKeyAriaLabel: '下矢印',
+                  closeText: '閉じる',
+                  closeKeyAriaLabel: 'escape'
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
