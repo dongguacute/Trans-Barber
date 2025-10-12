@@ -3,13 +3,12 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "Trans Barber"
+  tagline: A website that helps hairdressers understand the needs of transgender people
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 开始阅读
+      link: /docs/test
     - theme: alt
       text: API Examples
       link: /api-examples
