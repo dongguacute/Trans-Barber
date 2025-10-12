@@ -1,1 +1,198 @@
 @import 'tailwindcss';
+
+/* 跨性别旗帜配色方案 */
+:root {
+  --trans-blue: #5BCEFA;
+  --trans-pink: #F5A9B8;
+  --trans-white: #FFFFFF;
+  
+  /* 主题色设置 */
+  --vp-c-brand-1: var(--trans-blue);
+  --vp-c-brand-2: var(--trans-pink);
+  --vp-c-brand-3: var(--trans-blue);
+  --vp-c-brand-soft: rgba(91, 206, 250, 0.14);
+  
+  /* 按钮颜色 */
+  --vp-button-brand-bg: var(--trans-blue);
+  --vp-button-brand-hover-bg: var(--trans-pink);
+  --vp-button-brand-active-bg: var(--trans-blue);
+}
+
+.dark {
+  --vp-c-brand-1: var(--trans-pink);
+  --vp-c-brand-2: var(--trans-blue);
+  --vp-c-brand-3: var(--trans-pink);
+  --vp-c-brand-soft: rgba(245, 169, 184, 0.16);
+  
+  --vp-button-brand-bg: var(--trans-pink);
+  --vp-button-brand-hover-bg: var(--trans-blue);
+  --vp-button-brand-active-bg: var(--trans-pink);
+}
+
+/* 主页背景图片全屏 */
+.VPHome {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.VPHome .VPHomeContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 !important;
+}
+
+/* 移除首页多余空白 */
+.VPHome .VPContent,
+.VPHome .container,
+.VPHome .VPHomeHero,
+.VPHome .VPHero {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.VPHome .VPFeatures,
+.VPHome .VPHomeFeatures {
+  display: none !important;
+}
+
+/* 浅色模式背景 */
+html:not(.dark) .VPHome {
+  background-image: url('/hero-light.png');
+}
+
+/* 深色模式背景 */
+html.dark .VPHome {
+  background-image: url('/hero-dark.png');
+}
+
+/* 标题渐变色效果 - 浅色模式 */
+.VPHero .name {
+  background: linear-gradient(135deg, #F5A9B8 0%, #5BCEFA 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800 !important;
+  text-align: center !important;
+}
+
+/* 深色模式标题渐变调整 */
+html.dark .VPHero .name {
+  background: linear-gradient(135deg, var(--trans-pink) 0%, var(--trans-white) 50%, var(--trans-blue) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 按钮容器居中 */
+.VPHero .actions {
+  justify-content: center !important;
+  padding-top: 2rem;
+}
+
+/* 按钮样式优化 */
+.VPButton.brand {
+  border-radius: 24px;
+  padding: 0 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(91, 206, 250, 0.3);
+}
+
+.VPButton.brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(245, 169, 184, 0.4);
+}
+
+html.dark .VPButton.brand {
+  box-shadow: 0 4px 12px rgba(245, 169, 184, 0.3);
+}
+
+html.dark .VPButton.brand:hover {
+  box-shadow: 0 6px 16px rgba(91, 206, 250, 0.4);
+}
+
+/* 主页内容居中优化 */
+.VPHero .container {
+  text-align: center !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.VPHero .main {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+.VPHeroInfo {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.VPHero .text,
+.VPHero .tagline {
+  text-align: center !important;
+  width: 100% !important;
+}
+
+/* 强制标题居中 */
+.VPHero .name,
+.VPHero h1.name {
+  text-align: center !important;
+  width: 100% !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+/* 文档页面顶部间距优化 */
+.VPDoc {
+  padding-top: calc(var(--vp-nav-height) + 32px) !important;
+}
+
+.VPDoc .content {
+  padding-top: 24px !important;
+}
+
+.VPContent.has-sidebar {
+  padding-top: 24px !important;
+}
+/* 确保标题和按钮居中 */
+.VPHero {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+/* 按钮容器强制居中 */
+.VPHero .actions,
+.VPHero .VPButton {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 auto !important;
+}
+
+/* 禁用导航栏滚动时的过渡效果，避免闪烁 */
+.VPNav,
+.VPNavBar {
+  transition: none !important;
+}

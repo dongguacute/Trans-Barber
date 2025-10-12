@@ -45,6 +45,10 @@ export default defineConfig({
     lastUpdated: true,
    description: "A website that helps hairdressers understand the needs of transgender people",
   themeConfig: {
+    footer: {
+      message: 'Released under the CC BY-SA 4.0 License.',
+      copyright: 'Copyright © 2025-present Cherry Fu & Contributors'
+    },
     editLink: {
       pattern: 'https://github.com/dongguacute/Trans-Barber/edit/main/:path'
     },
