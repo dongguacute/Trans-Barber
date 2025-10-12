@@ -299,14 +299,15 @@ export default defineConfig({
         '@nolebase/ui', 
       ], 
     },
-    ssr: { 
-      noExternal: [ 
+    ssr: {
+      noExternal: [
         // If there are other packages that need to be processed by Vite, you can add them here.
         '@nolebase/vitepress-plugin-highlight-targeted-heading',
-        '@nolebase/vitepress-plugin-enhanced-readabilities', 
-        '@nolebase/ui',  
-      ], 
-    }, 
+        '@nolebase/vitepress-plugin-enhanced-readabilities',
+        '@nolebase/vitepress-plugin-inline-link-preview',
+        '@nolebase/ui',
+      ],
+    },
      plugins: [
        GitChangelog({
          // Fill in your repository URL here
