@@ -15,6 +15,7 @@ export default defineConfig({
       title: "Trans Barber",
       description: "帮助理发师了解跨性别者需求的网站",
       themeConfig: {
+        logo: '/logo.svg',
         nav: [
           { text: '首页', link: '/' },
         ],
@@ -62,6 +63,7 @@ export default defineConfig({
       title: "Trans Barber",
       description: "A website that helps hairdressers understand the needs of transgender people",
       themeConfig: {
+        logo: '/logo.svg',
         nav: [
           { text: 'Home', link: '/en/' },
         ],
@@ -104,6 +106,7 @@ export default defineConfig({
       title: "Trans Barber",
       description: "幫助理髮師了解跨性別者需求的網站",
       themeConfig: {
+        logo: '/logo.svg',
         nav: [
           { text: '首頁', link: '/zh-tw/' },
         ],
@@ -146,6 +149,7 @@ export default defineConfig({
       title: "Trans Barber",
       description: "理髪師がトランスジェンダーの人々のニーズを理解するのを支援するウェブサイト",
       themeConfig: {
+        logo: '/logo.svg',
         nav: [
           { text: 'ホーム', link: '/ja/' },
         ],
@@ -213,6 +217,7 @@ export default defineConfig({
      },
    },
   head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
     ['link', { rel: 'stylesheet', href: '/style.css' }]
   ],
   appearance: true,
