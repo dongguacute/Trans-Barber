@@ -24,7 +24,8 @@ export default defineConfig({
             items: [
               { text: '引子', link: '/1Introduction' },
               { text: '什么是跨性别', link: '/2whatstrans' },
-              { text: '不能说的话', link: '/3cantspeak' }
+              { text: '不能说的话', link: '/3cantspeak' },
+              { text: '友善理发店', link: '/4friendlybarbers' }
             ]
           }
         ],

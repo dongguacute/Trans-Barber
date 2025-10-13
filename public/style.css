@@ -77,7 +77,7 @@ html.dark .VPHome {
 
 /* 标题渐变色效果 - 浅色模式 */
 .VPHero .name {
-  background: linear-gradient(135deg, #F5A9B8 0%, #5BCEFA 100%);
+  background: linear-gradient(135deg, #5BCEFA 0%, #F5A9B8 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -258,20 +258,20 @@ html.dark .VPButton.brand:hover {
 
   /* 標題文字大小調整 */
   .VPHero .name {
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
     line-height: 1.2 !important;
     margin-bottom: 1rem !important;
   }
 
   .VPHero .text {
-    font-size: 1.25rem !important;
+    font-size: 1.5rem !important;
     line-height: 1.4 !important;
     margin-bottom: 0.75rem !important;
     padding: 0 8px !important;
   }
 
   .VPHero .tagline {
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
     line-height: 1.5 !important;
     margin-bottom: 1.5rem !important;
     padding: 0 8px !important;
@@ -289,13 +289,13 @@ html.dark .VPButton.brand:hover {
   .VPButton {
     width: 100% !important;
     max-width: 280px !important;
-    padding: 12px 24px !important;
-    font-size: 1rem !important;
+    padding: 14px 28px !important;
+    font-size: 1.1rem !important;
     justify-content: center !important;
   }
 
   .VPButton.brand {
-    padding: 12px 32px !important;
+    padding: 14px 36px !important;
   }
 
   /* 背景圖片適配 */
@@ -326,28 +326,28 @@ html.dark .VPButton.brand:hover {
 
   /* 更小的標題 */
   .VPHero .name {
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
     line-height: 1.1 !important;
   }
 
   .VPHero .text {
-    font-size: 1.1rem !important;
+    font-size: 1.3rem !important;
   }
 
   .VPHero .tagline {
-    font-size: 0.9rem !important;
+    font-size: 1.1rem !important;
     padding: 0 4px !important;
   }
 
   /* 按鈕更窄 */
   .VPButton {
     max-width: 240px !important;
-    padding: 10px 20px !important;
-    font-size: 0.95rem !important;
+    padding: 12px 24px !important;
+    font-size: 1rem !important;
   }
 
   .VPButton.brand {
-    padding: 10px 24px !important;
+    padding: 12px 28px !important;
   }
 
   /* 導航欄調整 */
@@ -399,14 +399,34 @@ html.dark .VPButton.brand:hover {
   }
 
   .VPHero .name {
-    font-size: 4.5rem !important;
+    font-size: 5rem !important;
   }
 
   .VPHero .text {
-    font-size: 2rem !important;
+    font-size: 2.2rem !important;
   }
 
   .VPHero .tagline {
-    font-size: 1.5rem !important;
+    font-size: 1.7rem !important;
   }
+}
+
+/* 主頁字體顏色增強 */
+
+/* 淺色模式主頁文字 */
+html:not(.dark) .VPHero .text {
+  color: var(--trans-pink);
+}
+
+html:not(.dark) .VPHero .tagline {
+  color: var(--trans-pink);
+}
+
+/* 深色模式主頁文字 */
+html.dark .VPHero .text {
+  color: #e0e0e0;
+}
+
+html.dark .VPHero .tagline {
+  color: #bdc3c7;
 }
